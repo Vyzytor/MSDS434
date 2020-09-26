@@ -1,7 +1,7 @@
 # Python Fibonacci series Program using While Loop
 
 # Fibonacci series will start at 0 and travel upto below number
-#Number = int(input("\nPlease Enter the Range Number: "))
+# Number = int(input("\nPlease Enter the Range Number: "))
 
 # Initializing First and Second Values of a Series
 def Fib(Number):
