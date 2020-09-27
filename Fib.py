@@ -13,12 +13,12 @@ def Fib(Number):
     while(i < Number):
        if(i <= 1):
            Next = i
-        else:
+       else:
            Next = First_Value + Second_Value
            First_Value = Second_Value
            Second_Value = Next
-      print(Next)
-      i = i + 1
+    print(Next)
+    i = i + 1
             
             
 Fib(3)
