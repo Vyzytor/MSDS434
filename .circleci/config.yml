@@ -8,11 +8,11 @@ jobs:
   build-and-test:
     executor: python/default
     steps:
-    - checkout
+      - checkout
       - python/load-cache
       - python/install-deps
       - python/save-cache
-      - run: 
+      - run:
           command: ./manage.py test
           name: Test
 
