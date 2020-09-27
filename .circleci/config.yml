@@ -5,7 +5,7 @@ name: CCI
 on: [push]
 
 jobs:
-  build-and-test:	  build:
+  build-and-test:
     executor: python/default	
     steps:	
       - checkout	
