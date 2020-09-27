@@ -15,8 +15,6 @@ jobs:
     steps:
       - checkout
       - run: echo "this is the test job"
-      - run: make install
-      - run: make lint
 
 # Orchestrate our job run sequence
 workflows:
