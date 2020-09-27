@@ -15,11 +15,6 @@ jobs:
     steps:
       - checkout
       - run: echo "this is the test job"
-    # run lints!
-      - run:
-          name: run lint
-          command: |
-            make lint
 
 # Orchestrate our job run sequence
 workflows:
