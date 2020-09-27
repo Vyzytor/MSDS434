@@ -1,5 +1,2 @@
-<<<<<<< HEAD
 pylint
-=======
-pylint
->>>>>>> 54bd5655d6221c0a101587f91ed0b28983a9e9d5
+pytest
