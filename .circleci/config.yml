@@ -1,22 +1,25 @@
-# This is a basic workflow to help you get started with Actions
+version: 2.1
 
-name: CCI
-
-on: [push]
-
+# Define the jobs we want to run for this project
 jobs:
-  build-and-test:
-    executor: python/default
+  build:
+    docker:
+      - image: circleci/<language>:<version TAG>
     steps:
       - checkout
-      - python/load-cache
-      - python/install-deps
-      - python/save-cache
-      - run:
-          command: ./manage.py test
-          name: Test
+      - run: echo "this is the build job"
+  test:
+    docker:
+      - image: circleci/<language>:<version TAG>
+    steps:
+      - checkout
+      - run: echo "this is the test job"
 
+# Orchestrate our job run sequence
 workflows:
-  main:
+  build_and_test:
     jobs:
-      - build-and-test
+      - build
+      - test:
+          requires:
+            - build
