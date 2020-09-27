@@ -11,7 +11,7 @@ def Fib(Number):
 
     # Find & Displaying Fibonacci series
     while(i < Number):
-        if(i <= 1):
+    if(i <= 1):
             Next = i
         else:
             Next = First_Value + Second_Value
@@ -25,5 +25,3 @@ Fib(3)
 Fib(4)
 Fib(5)
 Fib(8)
-
-if:
