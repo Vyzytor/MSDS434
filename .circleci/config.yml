@@ -5,7 +5,16 @@ name: CCI
 on: [push]
 
 jobs:
-  build:
+  build-and-test:	  build:
+    executor: python/default	
+    steps:	
+      - checkout	
+      - python/load-cache	
+      - python/install-deps	
+      - python/save-cache	
+      - run:	
+          command: ./manage.py test	
+          name: Test
 
     runs-on: ubuntu-latest
 
