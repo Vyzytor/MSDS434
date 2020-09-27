@@ -1,7 +1,7 @@
 install:
 	pip install --upgrade pip &&\
 <<<<<<< HEAD
-        pip install -r requirements.txt
+	pip install -r requirements.txt
 lint:
 	pylint --disable=R,C hello.py
 	pylint --disable=R,C Demo2.py
