@@ -23,4 +23,4 @@ def Fib(Number):
 
 Fib(3)
 Fib(4)
-Fib(5)
+Fib(6)
