@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-
-
-@author: ann
-"""
-
 
 import pandas as pd
 import os
