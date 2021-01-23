@@ -4,7 +4,9 @@
 # Number = int(input("\nPlease Enter the Range Number: "))
 
 # Initializing First and Second Values of a Series
-def Fib(Number):
+def Fib(
+    Number
+):
     i = 0
     First_Value = 0
     Second_Value = 1
