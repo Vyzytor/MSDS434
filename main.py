@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def hello():
   """Return a friendly HTTP greeting."""
-  val = {"value": "Hello World!"}
+  val = {"value": "Hello World!*!*!*"}
   return jsonify(val)
 
 @app.route('/name/<value>')
